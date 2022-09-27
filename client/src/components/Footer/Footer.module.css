@@ -1,0 +1,50 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 10vh;
+}
+
+.contenedorImagen {
+    width: 30%;
+}
+
+.imagen {
+    max-height: 100%;
+}
+
+.contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 30%;
+    text-decoration: none;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contenedorRedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+}
+
+.redes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.iconos {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}

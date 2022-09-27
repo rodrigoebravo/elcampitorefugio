@@ -1,0 +1,22 @@
+@mixin background-color ($var) {
+    background-color: $var;
+}
+
+@mixin parent ($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin align ($justify, $items, $text) {
+    justify-content: $justify;
+    align-items: $items;
+    text-align: $text;
+}
+
+@mixin parent-grid () {
+    display: grid;
+}
+
+@mixin border-radius ($radius) {
+    border-radius: $radius;
+}

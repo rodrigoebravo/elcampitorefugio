@@ -1,0 +1,433 @@
+@import "scss/colors";
+@import "scss/sizes";
+@import "scss/mixins";
+
+@font-face {
+    font-family: "Trashhand";
+    src: url("assets/fonts/TrashHand.TTF");
+}
+
+@font-face {
+    font-family: "Seravek";
+    src: url("assets/fonts/Seravek.ttf");
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Seravek', 'sans-serif';
+    font-size: $paragraph-size;
+    color: $grey;
+    font-weight: 300;
+}
+
+.parent {
+    @include parent (row);
+}
+
+.parent-column {
+    @include parent (column);
+}
+
+.parent-grid-5 {
+   @include parent-grid();
+   @include align (initial, center, center);
+   grid-template-columns: 29% 17% 17% 17% 17%;
+   gap: 10px;
+   padding: 10px 0;
+}
+.parent-grid-2 {
+    @include parent-grid();
+    grid-template-columns: auto auto;
+    gap: 10px
+ }
+
+ .parent-grid-2-paypal {
+    @include parent-grid();
+    @include align (initial, center, center);
+    grid-template-columns: 29% 70.5%;
+    column-gap: 10px;
+    padding: 10px 0;
+    .medio-de-pago {
+        padding: 0px;
+    }
+ }
+ 
+h1 {
+    color: $light-blue;
+    font-size: $h1-size;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: $light-blue;
+    font-family: 'Trashhand';
+    font-size: $h2-size;
+}
+
+h3 {
+    color: $white;
+    font-size: $h3-size;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: $h4-size;
+    font-weight: 900;
+}
+
+.hidden {
+    display: flex !important;
+}
+
+.appear {
+    display: none !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+//------ HEADER --------//
+header {
+    width: 100%;
+    @include parent (row);
+    @include align (space-around, center, center);
+}
+
+nav {
+    width: 70%;
+    margin-top: 15px;
+    margin-right: 20px;
+    font-weight: 800;
+    ul {
+        @include parent (row);
+        @include align (space-around, left, left);
+        li {
+            list-style: none;
+            @include parent (row);
+            @include align (left, left, center);
+            a {
+                color: $grey;
+                text-decoration: none;
+                flex-basis: 0;
+                flex-grow: 1;
+                margin: 10px;
+                margin-top: 0px;            
+            }
+        }
+    }
+}
+
+nav a:hover {
+    color: $orange;
+    text-decoration: none;
+}
+
+//------ MAIN-INDEX --------//
+
+article {
+    @include parent (row);
+    @include align (space-around, center, left);
+    p {
+        font-size: $paragraph-size-big;
+    }
+}
+
+article div {
+    padding: 50px;
+}
+
+.content {
+    width: 50%;
+}
+
+.box-container {
+    @include parent (row);
+    flex-wrap: wrap;
+    flex-flow: flex wrap;
+}
+
+.box {
+    height: 250px;
+    width: 25%;
+    padding: 50px;
+}
+
+.background-grey {
+    background-color: $grey;
+}
+
+.background-orange {
+    background-color: $orange;
+}
+
+.background-purple {
+    background-color: $purple;
+}
+
+.background-light-blue {
+    background-color: $light-blue;
+}
+
+.background-green {
+    background-color: $green;
+}
+
+.background-pink {
+    background-color: $pink;
+}
+
+.background-light-orange {
+    background-color: $light-orange;
+}
+
+//------ FOOTER --------//
+
+footer {
+    @include parent (column);
+    padding: 50px 20px 10px 20px;
+    @include align (space-around, space-around, center);
+}
+
+.footer-container{
+    @include parent (row);
+    @include align (space-around, center, left);
+}
+
+.derechos {
+    margin-top: 50px;
+}
+
+.info-container {
+    @include parent (row);
+    @include align (left, center, center);
+    p {
+        margin-top: 20px;   
+        margin-left: 20px;
+    }
+}
+
+i {
+    color: $orange;
+    font-size: $icon-size;
+    margin-top: 20px;
+}
+
+.redes i {
+    margin-right: 20px;
+}
+
+// ------------ COLABORAR ------------// 
+
+.colaborar {
+    padding: 50px;
+}
+
+.colaborar section {
+    margin-bottom: 20px;
+}
+
+.colaborar h2 {
+    color: $green;
+}
+
+
+
+span {
+    font-weight: bold;
+}
+
+.cuenta-bancaria p, .debito-automatico p {
+    color: $white;
+    font-weight: 100;
+    font-size: 1.15em;
+}
+
+.debito-automatico p { 
+    margin-top: 20px;
+}
+
+.cuenta-bancaria h3 {
+    margin-bottom: 20px;
+    font-size: 1.2500em;
+}
+
+.cuenta-bancaria, .debito-automatico {
+    padding: 40px;
+    max-height: 300px;
+    min-height: 300px;
+}
+
+.debito-automatico {
+    @include parent(column);
+}
+
+.border-radius {
+    @include border-radius(25px);
+}
+
+.border-light-blue {
+    border: 3px solid $light-blue;
+}
+
+.border-green {
+    border: 3px solid $green;
+}
+
+.border-pink {
+    border: 3px solid $pink;
+}
+
+button {
+    @include border-radius(25px);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;    
+    border-radius: 15px;
+    border: 0px;
+    font-weight: bold;
+    color: $white;
+    font-size: 1.8em;
+    height: 100%;
+    min-height: 150px;
+}
+
+.no-button {
+    @include border-radius(25px);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;    
+    border-radius: 15px;
+    border: 0px;
+    font-weight: 100;
+    color: $white;
+    font-size: 0.5em;
+    height: 100%;
+    min-height: 150px;
+}
+
+.button-paypal {
+    min-height: 150px;
+    height: 100%;
+}
+
+.button-form {
+    width: 30%;
+    min-width: 235px;
+    font-size: 1em;
+    color: $purple;
+    height: auto;
+    background-color: #FAFAFA;
+    margin-top: 20px;
+    align-self: flex-end;
+    min-height: 60px !important;
+}
+
+input {
+    border: 0px;
+    border-bottom: 3px solid white;
+    background: transparent;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    width: 85%;
+}
+
+.medio-de-pago {
+    @include parent(row);
+    @include align (center, center, center);
+    @include border-radius(25px);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: -webkit-fill-available;
+}
+
+//------ MEDIA QUERIES -----//
+
+@media (max-width: 1085px) {
+    body {
+        font-size: $h3-small-size;
+    }
+    .parent-grid-2, .parent-grid-2-paypal, .parent-grid-5 {
+        grid-template-columns: none;
+        gap: 10px;
+    }
+  }
+  
+@media (max-width: 850px) {
+    .box {
+        width: 50%;
+    }
+    .parent-grid-2, .parent-grid-2-paypal, .parent-grid-5 {
+        grid-template-columns: none;
+        gap: 10px;
+    }
+    .debito-automatico {
+        max-height: 400px;
+    }
+  }
+  
+@media (max-width: 700px) {
+    .hidden {
+        display: none !important;
+    }  
+    .appear {
+        display: inline !important;
+    }
+    .fa-bars {
+        margin-right: 30px;
+    }
+    ul {
+        display: block !important;
+        position: absolute;
+        background: $orange;
+        width: 100%;
+        top: 80px;
+        right: 0px;
+        font-size: 1.3em;
+        li {
+            border-bottom: 1px solid $white;
+        }
+        a {
+            color: $white !important;
+            margin-top: 20px !important;
+        }
+        a:hover {
+            color: $grey !important;
+        }
+        li:hover {
+            background-color: $light-orange;
+        }
+    }
+    .content {
+        width: 90%;
+    }    
+    .footer-container {
+    @include parent (column);
+    @include align (space-around, flex-start, left);
+    margin-left: 20px;
+        img {
+            display: none;
+        }
+    }
+
+    .redes {
+        margin-top: 40px;
+    }
+
+    .home article {
+        @include parent (column);
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
