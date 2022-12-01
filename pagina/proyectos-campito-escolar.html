@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/0c08d73767.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Campito Refugio</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="assets/img/logo.svg" alt="Logo del campito" height="auto" width="55%"></a>
+        <nav>
+            <ul class="hidden" id="myLinks">
+                <li> <a href="nosotros.html"> Nosotros</a> </li>
+                <li class="hidden">|</li>
+                <li> <a href="colaborar.html"> Colabor&aacute;</a> </li>
+                <li class="hidden">|</li>
+                <li> <a href="adopta.html"> Adopt&aacute;</a> </li>
+                <li class="hidden">|</li>
+                <li> <a href="voluntarios.html"> Voluntariado</a> </li>
+                <li class="hidden">|</li>
+                <li> <a class="pagina-actual" href="proyectos.html"> Proyectos</a> </li>
+                <li class="hidden">|</li>
+                <li> <a href="contactanos.html"> Contactanos</a> </li>
+            </ul>
+        </nav>
+        <a href="javascript:void(0);" onclick="myFunction()"> <i class="fas fa-bars appear fa-4xs"></i></a>
+    </header>
+    <main class="escolar parent-column">
+        <div class="parent">
+            <section>
+                <h2>EL CAMPITO ESCOLAR</h2>
+                <p>Campito escolar surgi&oacute; con la intenci&oacute;n de concientizar y de trabajar con niños desde las bases. El
+                    objetivo es poder enseñarles, por ejemplo, sobre la responsabilidad que implica tener un animal en
+                    el hogar, entre otras cosas debidamente identificada y vacunada, y sobre los beneficios de la
+                    castraci&oacute;n a temprana edad. Asimismo, buscamos sensibilizar a los niños sobre el maltrato animal.
+                    Nuestro mayor objetivo es poder lograr que las generaciones futuras se comprometan a ayudar a
+                    aquellos animales que est&eacute;n en situaci&oacute;n de calle.</p>
+                <p>Este proyecto abarca los 3 niveles educativos:
+                </p>
+                <ul>
+                    <li>La ETAPA INICIAL (niños de 3 a 5 años)</li>
+                    <li>La ETAPA PRIMARIA (niños de 6 a 11 años) </li>
+                    <li>La ETAPA SECUNDARIA (adolescentes y preadolescentes a partir de los 12 años). </li>
+                </ul>
+                <p>Si bien el enfoque b&aacute;sico es el mismo para todos, tambi&eacute;n hemos incluido el uso de t&eacute;rminos nuevos
+                    como "eutanasia", "criaderos clandestinos" y "zoonosis" para los niños de mayor edad. Las charlas de
+                    concientizaci&oacute;n son dictadas por voluntarios del refugio y se llevan a cabo en los distintos
+                    establecimientos escolares (muchos de los colegios realizan un trabajo previo sobre la tem&aacute;tica),
+                    con una duraci&oacute;n aproximada de 1.30 a 2.00 horas. Tambi&eacute;n podemos realizar charlas virtuales,
+                    adecu&aacute;ndonos a la necesidad de cada colegio y del contexto.</p>
+            </section>
+        </div>
+        <section class="box-container">
+            <div class="box">
+                <img src="assets/img/img-voluntarios2.jpg" alt="" width="100%" height="auto">
+            </div>
+            <div class="box">
+                <img src="assets/img/img-voluntarios3.jpg" alt="" width="100%" height="auto">
+            </div>
+            <div class="box">
+                <img src="assets/img/img-voluntarios4.jpg" alt="" width="100%" height="auto">
+            </div>
+            <div class="box">
+                <img src="assets/img/img-voluntarios5.jpg" alt="" width="100%" height="auto">
+            </div>
+            <div class="box">
+                <img src="assets/img/img-voluntarios6.jpg" alt="" width="100%" height="auto">
+            </div>
+            <div class="box">
+                <img src="assets/img/img-voluntarios7.jpg" alt="" width="100%" height="auto">
+            </div>
+            <div class="box">
+                <img src="assets/img/img-voluntarios8.jpg" alt="" width="100%" height="auto">
+            </div>
+            <div class="box">
+                <img src="assets/img/img-voluntarios9.jpg" alt="" width="100%" height="auto">
+            </div>
+        </section>
+        <section class="center section-button">
+            <p><span>Si quer&eacute;s programar una charla, escribinos a:</span></p>
+            <button>institucional@elcampitorefugio.org</button>
+            <p><span>¡Te esperamos!</span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <img src="assets/img/logo-cara.svg" width="15%" height="auto" alt="Logo carita de perro del campito">
+            <div>
+                <div class="info-container">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>+54 9 11 2537 1316</p>
+                </div>
+                <div class="info-container">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>versiagregamosmail@mail.com.ar</p>
+                </div>
+                <div class="info-container">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Estamos en Esteban Echeverr&iacute;a, Argentina</p>
+                </div>
+            </div>
+            <div class="redes">
+                <h4>¡Seguinos!</h4>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <p class="derechos">El Campito Refugio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.classList.contains('hidden')) {
+                x.classList.remove('hidden');
+            } else {
+                x.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+
+</html>

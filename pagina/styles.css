@@ -125,6 +125,10 @@ a {
   text-decoration: none;
 }
 
+.section-img {
+  text-align: end !important;
+}
+
 header {
   width: 100%;
   display: -webkit-box;
@@ -198,6 +202,10 @@ nav ul li a {
 nav a:hover {
   color: #E48125;
   text-decoration: none;
+}
+
+.pagina-actual {
+  color: #E48125;
 }
 
 article {
@@ -345,8 +353,26 @@ i {
   margin-right: 20px;
 }
 
-.colaborar {
+main {
   padding: 50px;
+}
+
+.home {
+  padding: 0 !important;
+}
+
+.center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.margin-top {
+  margin-top: 20px;
 }
 
 .colaborar section {
@@ -485,6 +511,130 @@ input {
   height: -webkit-fill-available;
 }
 
+.nosotros h2, .nosotros h3, .nosotros li::marker {
+  color: #E48125;
+}
+
+.nosotros h2, .nosotros h3 {
+  margin-bottom: 20px;
+}
+
+.nosotros h3 {
+  margin-bottom: 10px;
+}
+
+.nosotros section {
+  width: 70%;
+}
+
+.nosotros section img {
+  max-height: 800px;
+}
+
+.adopta h2, .adopta li::marker {
+  color: #F9C0C1;
+}
+
+.adopta h2, .adopta p, .adopta ul {
+  margin-bottom: 20px;
+}
+
+.adopta section {
+  width: 70%;
+}
+
+.adopta button {
+  background-color: #F9C0C1;
+}
+
+.section-button {
+  width: 100% !important;
+  margin-top: 40px;
+}
+
+.section-button button {
+  width: auto;
+  padding: 20px;
+  min-height: 0;
+  height: 75px;
+  margin-top: 20px;
+}
+
+.voluntarios h2, .voluntarios h3, .voluntarios li::marker {
+  color: #4FA7C1;
+}
+
+.voluntarios section {
+  width: 100%;
+}
+
+.voluntarios p, .voluntarios h3, .voluntarios ul, .voluntarios h2 {
+  margin-top: 20px;
+}
+
+.voluntarios button {
+  background-color: #4FA7C1;
+}
+
+.voluntarios .box {
+  padding: 0px !important;
+  height: 300px;
+}
+
+.voluntarios .box-container {
+  margin-top: 40px;
+}
+
+.escolar h2, .escolar h3, .escolar li::marker {
+  color: #55BA68;
+}
+
+.escolar section {
+  width: 100%;
+}
+
+.escolar p, .escolar h3, .escolar ul, .escolar h2 {
+  margin-top: 20px;
+}
+
+.escolar button {
+  background-color: #55BA68;
+}
+
+.escolar .box {
+  padding: 0px !important;
+  height: 300px;
+}
+
+.escolar .box-container {
+  margin-top: 40px;
+}
+
+.visitas h2, .visitas a {
+  color: #E48125 !important;
+}
+
+.visitas section {
+  width: 100%;
+}
+
+.visitas p, .visitas h2 {
+  margin-top: 20px;
+}
+
+.visitas .transporte {
+  width: 30%;
+  padding: 20px;
+}
+
+.visitas a {
+  font-weight: bold;
+}
+
+.visitas a:hover {
+  color: #FCA24F !important;
+}
+
 @media (max-width: 1085px) {
   body {
     font-size: 1em;
@@ -508,6 +658,23 @@ input {
   .debito-automatico {
     max-height: 400px;
   }
+  .nosotros .section-img, .adopta .section-img, .voluntarios .section-img {
+    display: none;
+  }
+  .nosotros section, .adopta section, .voluntarios section {
+    width: 100%;
+  }
+  .visitas .transporte-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .visitas .transporte-container .transporte {
+    width: 100%;
+    padding: 0px;
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -520,7 +687,7 @@ input {
   .fa-bars {
     margin-right: 30px;
   }
-  ul {
+  nav ul {
     display: block !important;
     position: absolute;
     background: #E48125;
@@ -529,17 +696,17 @@ input {
     right: 0px;
     font-size: 1.3em;
   }
-  ul li {
+  nav ul li {
     border-bottom: 1px solid #FFFFFF;
   }
-  ul a {
+  nav ul a {
     color: #FFFFFF !important;
     margin-top: 20px !important;
   }
-  ul a:hover {
+  nav ul a:hover {
     color: #444445 !important;
   }
-  ul li:hover {
+  nav ul li:hover {
     background-color: #FCA24F;
   }
   .content {

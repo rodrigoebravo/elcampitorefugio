@@ -93,6 +93,10 @@ a {
     text-decoration: none;
 }
 
+.section-img {
+    text-align: end !important;
+}
+
 //------ HEADER --------//
 header {
     width: 100%;
@@ -127,6 +131,10 @@ nav {
 nav a:hover {
     color: $orange;
     text-decoration: none;
+}
+
+.pagina-actual {
+    color: $orange;
 }
 
 //------ MAIN-INDEX --------//
@@ -223,11 +231,25 @@ i {
     margin-right: 20px;
 }
 
-// ------------ COLABORAR ------------// 
-
-.colaborar {
+main {
     padding: 50px;
 }
+
+.home {
+    padding: 0 !important;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+// ------------ COLABORAR ------------// 
 
 .colaborar section {
     margin-bottom: 20px;
@@ -236,8 +258,6 @@ i {
 .colaborar h2 {
     color: $green;
 }
-
-
 
 span {
     font-weight: bold;
@@ -347,6 +367,134 @@ input {
     height: -webkit-fill-available;
 }
 
+
+// ------------ NOSOTROS ------------// 
+
+.nosotros h2, .nosotros h3, .nosotros li::marker{
+    color: $orange;
+}
+
+.nosotros h2, .nosotros h3  {
+    margin-bottom: 20px;
+}
+
+.nosotros h3 {
+    margin-bottom: 10px;
+}
+
+.nosotros section {
+    width: 70%;
+    img {
+        max-height: 800px;
+    }
+}
+
+// ------------ ADOPTA ------------// 
+.adopta h2, .adopta li::marker {
+    color: $pink;
+}
+
+.adopta h2, .adopta p, .adopta ul  {
+    margin-bottom: 20px;
+}
+
+.adopta section {
+    width: 70%;
+}
+
+.adopta button {
+    background-color: $pink;
+}
+
+.section-button {
+    width: 100% !important;
+    margin-top: 40px;
+    button {
+        width: auto;
+        padding: 20px;
+        min-height: 0;
+        height: 75px;
+        margin-top: 20px;
+    }
+}
+
+// ------------ VOLUNTARIOS ------------// 
+.voluntarios h2, .voluntarios h3, .voluntarios li::marker {
+    color: $light-blue;
+}
+
+.voluntarios section {
+    width: 100%;
+}
+
+.voluntarios p, .voluntarios h3, .voluntarios ul, .voluntarios h2  {
+    margin-top: 20px;
+}
+
+.voluntarios button {
+    background-color: $light-blue;
+}
+
+.voluntarios .box {
+    padding: 0px !important;
+    height: 300px;
+}
+
+.voluntarios .box-container {
+    margin-top: 40px;
+}
+
+// ------------ ESCOLAR ------------// 
+.escolar h2, .escolar h3, .escolar li::marker {
+    color: $green;
+}
+
+.escolar section {
+    width: 100%;
+}
+
+.escolar p, .escolar h3, .escolar ul, .escolar h2  {
+    margin-top: 20px;
+}
+
+.escolar button {
+    background-color: $green;
+}
+
+.escolar .box {
+    padding: 0px !important;
+    height: 300px;
+}
+
+.escolar .box-container {
+    margin-top: 40px;
+}
+
+// ------------ VISITAS ------------// 
+.visitas h2, .visitas a {
+    color: $orange !important;
+}
+
+.visitas section {
+    width: 100%;
+}
+
+.visitas p, .visitas h2  {
+    margin-top: 20px;
+}
+
+.visitas .transporte {
+    width: 30%;
+    padding: 20px;
+}
+.visitas a {
+    font-weight: bold;
+}
+
+.visitas a:hover {
+    color:$light-orange !important;
+}
+
 //------ MEDIA QUERIES -----//
 
 @media (max-width: 1085px) {
@@ -370,6 +518,20 @@ input {
     .debito-automatico {
         max-height: 400px;
     }
+    .nosotros .section-img, .adopta .section-img, .voluntarios .section-img  {
+        display: none;
+    }
+    .nosotros section, .adopta section, .voluntarios section {
+        width: 100%;
+    }
+    .visitas .transporte-container {
+        flex-direction: column;
+        .transporte {
+            width: 100%;
+            padding: 0px;
+            margin-top: 40px;
+        }
+    }
   }
   
 @media (max-width: 700px) {
@@ -382,7 +544,7 @@ input {
     .fa-bars {
         margin-right: 30px;
     }
-    ul {
+    nav ul {
         display: block !important;
         position: absolute;
         background: $orange;
@@ -427,7 +589,3 @@ input {
         }
     }
 }
-
-
-
-
