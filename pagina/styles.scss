@@ -81,6 +81,15 @@ h4 {
     font-weight: 900;
 }
 
+.font-size-s {
+    font-size:  $paragraph-size-small;
+}
+
+
+.font-size-xs {
+    font-size:  $paragraph-size-xsmall;
+}
+
 .hidden {
     display: flex !important;
 }

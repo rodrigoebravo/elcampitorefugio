@@ -111,6 +111,14 @@ h4 {
   font-weight: 900;
 }
 
+.font-size-s {
+  font-size: 1em;
+}
+
+.font-size-xs {
+  font-size: 0.8em;
+}
+
 .hidden {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -225,7 +233,7 @@ article {
 }
 
 article p {
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 article div {
