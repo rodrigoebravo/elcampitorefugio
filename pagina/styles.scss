@@ -90,11 +90,11 @@ h4 {
     font-size:  $paragraph-size-xsmall;
 }
 
-.hidden {
+.hidden, .hidden2 {
     display: flex !important;
 }
 
-.appear {
+.appear, .appear2 {
     display: none !important;
 }
 
@@ -625,7 +625,7 @@ input {
         gap: 10px;
     }
     .debito-automatico {
-        max-height: 400px;
+        max-height: 500px;
     }
     .nosotros .section-img, .adopta .section-img, .voluntarios .section-img, .cuidados .section-img {
         display: none;
@@ -702,5 +702,17 @@ input {
     }
     button {
         font-size: 1em;
+    }
+}
+
+@media (max-width: 500px) {
+    .proyectos .box {
+        width: 100%;
+    }
+    .hidden2 {
+        display: none !important;
+    }  
+    .appear2 {
+        display: inline !important;
     }
 }
