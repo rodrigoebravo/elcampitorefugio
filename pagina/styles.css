@@ -383,11 +383,15 @@ main {
   margin-top: 20px;
 }
 
+.margin-left {
+  margin-left: 20px;
+}
+
 .colaborar section {
   margin-bottom: 20px;
 }
 
-.colaborar h2 {
+.colaborar h2, .colaborar a {
   color: #55BA68;
 }
 
@@ -573,7 +577,7 @@ input {
 }
 
 .voluntarios section {
-  width: 100%;
+  width: 80%;
 }
 
 .voluntarios p, .voluntarios h3, .voluntarios ul, .voluntarios h2 {
@@ -584,16 +588,7 @@ input {
   background-color: #4FA7C1;
 }
 
-.voluntarios .box {
-  padding: 0px !important;
-  height: 300px;
-}
-
-.voluntarios .box-container {
-  margin-top: 40px;
-}
-
-.escolar h2, .escolar h3, .escolar li::marker {
+.escolar h2, .escolar h3, .escolar li::marker, .escolar a {
   color: #55BA68;
 }
 
@@ -623,7 +618,7 @@ input {
 }
 
 .visitas section {
-  width: 100%;
+  width: 90%;
 }
 
 .visitas p, .visitas h2 {
@@ -643,6 +638,68 @@ input {
   color: #FCA24F !important;
 }
 
+.color-orange {
+  color: #E48125;
+}
+
+.cuidados h2 {
+  color: #6B639A;
+}
+
+.cuidados h2, .cuidados p {
+  margin-bottom: 20px;
+}
+
+.cuidados section {
+  width: 100%;
+}
+
+.cuidados button {
+  background-color: #6B639A;
+}
+
+.section-button {
+  width: 100% !important;
+  margin-top: 40px;
+}
+
+.section-button button {
+  width: auto;
+  padding: 20px;
+  min-height: 0;
+  height: 75px;
+  margin-top: 20px;
+}
+
+.cuidados .box {
+  padding: 0px !important;
+  height: 300px;
+}
+
+.cuidados .box-container {
+  margin-top: 40px;
+}
+
+.denuncias h2, .denuncias h3, .denuncias li::marker {
+  color: #444445;
+}
+
+.denuncias h2, .denuncias h3 {
+  margin-bottom: 20px;
+}
+
+.denuncias h3 {
+  margin-bottom: 10px;
+}
+
+.denuncias section {
+  width: 70%;
+}
+
+.denuncias section img {
+  max-height: 800px;
+}
+
 @media (max-width: 1085px) {
   body {
     font-size: 1em;
@@ -657,6 +714,7 @@ input {
 @media (max-width: 850px) {
   .box {
     width: 50%;
+    height: auto !important;
   }
   .parent-grid-2, .parent-grid-2-paypal, .parent-grid-5 {
     -ms-grid-columns: none;
@@ -666,10 +724,10 @@ input {
   .debito-automatico {
     max-height: 400px;
   }
-  .nosotros .section-img, .adopta .section-img, .voluntarios .section-img {
+  .nosotros .section-img, .adopta .section-img, .voluntarios .section-img, .cuidados .section-img {
     display: none;
   }
-  .nosotros section, .adopta section, .voluntarios section {
+  .nosotros section, .adopta section, .voluntarios section, .cuidados section {
     width: 100%;
   }
   .visitas .transporte-container {
@@ -682,6 +740,9 @@ input {
     width: 100%;
     padding: 0px;
     margin-top: 40px;
+  }
+  button {
+    font-size: 1.3em;
   }
 }
 
@@ -753,6 +814,9 @@ input {
   }
   .home article img {
     width: 100%;
+  }
+  button {
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
