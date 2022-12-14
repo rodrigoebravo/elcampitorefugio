@@ -564,6 +564,43 @@ input {
     }
 }
 
+// ------------ PRENSA ------------// 
+.prensa h2, .prensa a {
+    color: $light-orange !important;
+}
+
+.prensa button {
+    background-color: $light-orange;
+}
+
+.prensa section {
+    width: 90%;
+}
+
+.prensa p, .prensa h2  {
+    margin-top: 20px;
+}
+
+.prensa .transporte {
+    padding: 20px;
+}
+
+.prensa .transporte-container {
+    gap: 50px;
+}
+
+.prensa a {
+    font-weight: bold;
+}
+
+.prensa a:hover {
+    color:$light-orange !important;
+}
+
+.color-light-orange {
+    color: $light-orange;
+}
+
 
 
 //------ MEDIA QUERIES -----//

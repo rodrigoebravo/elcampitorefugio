@@ -700,6 +700,42 @@ input {
   max-height: 800px;
 }
 
+.prensa h2, .prensa a {
+  color: #FCA24F !important;
+}
+
+.prensa button {
+  background-color: #FCA24F;
+}
+
+.prensa section {
+  width: 90%;
+}
+
+.prensa p, .prensa h2 {
+  margin-top: 20px;
+}
+
+.prensa .transporte {
+  padding: 20px;
+}
+
+.prensa .transporte-container {
+  gap: 50px;
+}
+
+.prensa a {
+  font-weight: bold;
+}
+
+.prensa a:hover {
+  color: #FCA24F !important;
+}
+
+.color-light-orange {
+  color: #FCA24F;
+}
+
 @media (max-width: 1085px) {
   body {
     font-size: 1em;
