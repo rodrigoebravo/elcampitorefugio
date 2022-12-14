@@ -258,13 +258,17 @@ main {
     margin-top: 20px;
 }
 
+.margin-left {
+    margin-left: 20px;
+}
+
 // ------------ COLABORAR ------------// 
 
 .colaborar section {
     margin-bottom: 20px;
 }
 
-.colaborar h2 {
+.colaborar h2, .colaborar a {
     color: $green;
 }
 
@@ -433,7 +437,7 @@ input {
 }
 
 .voluntarios section {
-    width: 100%;
+    width: 80%;
 }
 
 .voluntarios p, .voluntarios h3, .voluntarios ul, .voluntarios h2  {
@@ -444,17 +448,9 @@ input {
     background-color: $light-blue;
 }
 
-.voluntarios .box {
-    padding: 0px !important;
-    height: 300px;
-}
-
-.voluntarios .box-container {
-    margin-top: 40px;
-}
 
 // ------------ ESCOLAR ------------// 
-.escolar h2, .escolar h3, .escolar li::marker {
+.escolar h2, .escolar h3, .escolar li::marker, .escolar a {
     color: $green;
 }
 
@@ -485,7 +481,7 @@ input {
 }
 
 .visitas section {
-    width: 100%;
+    width: 90%;
 }
 
 .visitas p, .visitas h2  {
@@ -504,6 +500,109 @@ input {
     color:$light-orange !important;
 }
 
+.color-orange {
+    color: $orange;
+}
+
+
+// ------------ CUIDADOS ------------// 
+.cuidados h2 {
+    color: $purple;
+}
+
+.cuidados h2, .cuidados p  {
+    margin-bottom: 20px;
+}
+
+.cuidados section {
+    width: 100%;
+}
+
+.cuidados button {
+    background-color: $purple;
+}
+
+.section-button {
+    width: 100% !important;
+    margin-top: 40px;
+    button {
+        width: auto;
+        padding: 20px;
+        min-height: 0;
+        height: 75px;
+        margin-top: 20px;
+    }
+}
+
+.cuidados .box {
+    padding: 0px !important;
+    height: 300px;
+}
+
+.cuidados .box-container {
+    margin-top: 40px;
+}
+
+// ------------ DENUNCIAS ------------// 
+
+.denuncias h2, .denuncias h3, .denuncias li::marker{
+    color: $grey;
+}
+
+.denuncias h2, .denuncias h3  {
+    margin-bottom: 20px;
+}
+
+.denuncias h3 {
+    margin-bottom: 10px;
+}
+
+.denuncias section {
+    width: 70%;
+    img {
+        max-height: 800px;
+    }
+}
+
+// ------------ PRENSA ------------// 
+.prensa h2, .prensa a {
+    color: $light-orange !important;
+}
+
+.prensa button {
+    background-color: $light-orange;
+}
+
+.prensa section {
+    width: 90%;
+}
+
+.prensa p, .prensa h2  {
+    margin-top: 20px;
+}
+
+.prensa .transporte {
+    padding: 20px;
+}
+
+.prensa .transporte-container {
+    gap: 50px;
+}
+
+.prensa a {
+    font-weight: bold;
+}
+
+.prensa a:hover {
+    color:$light-orange !important;
+}
+
+.color-light-orange {
+    color: $light-orange;
+}
+
+
+
 //------ MEDIA QUERIES -----//
 
 @media (max-width: 1085px) {
@@ -519,6 +618,7 @@ input {
 @media (max-width: 850px) {
     .box {
         width: 50%;
+        height: auto !important;
     }
     .parent-grid-2, .parent-grid-2-paypal, .parent-grid-5 {
         grid-template-columns: none;
@@ -527,19 +627,22 @@ input {
     .debito-automatico {
         max-height: 400px;
     }
-    .nosotros .section-img, .adopta .section-img, .voluntarios .section-img  {
+    .nosotros .section-img, .adopta .section-img, .voluntarios .section-img, .cuidados .section-img {
         display: none;
     }
-    .nosotros section, .adopta section, .voluntarios section {
+    .nosotros section, .adopta section, .voluntarios section, .cuidados section{
         width: 100%;
     }
-    .visitas .transporte-container {
+    .visitas .transporte-container, .prensa .transporte-container {
         flex-direction: column;
         .transporte {
             width: 100%;
             padding: 0px;
             margin-top: 40px;
         }
+    }
+    button {
+        font-size: 1.3em;
     }
   }
   
@@ -596,5 +699,8 @@ input {
         img {
             width: 100%;
         }
+    }
+    button {
+        font-size: 1em;
     }
 }
