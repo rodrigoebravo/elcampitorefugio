@@ -633,7 +633,7 @@ input {
     .nosotros section, .adopta section, .voluntarios section, .cuidados section{
         width: 100%;
     }
-    .visitas .transporte-container {
+    .visitas .transporte-container, .prensa .transporte-container {
         flex-direction: column;
         .transporte {
             width: 100%;

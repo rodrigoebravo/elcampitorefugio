@@ -766,13 +766,13 @@ input {
   .nosotros section, .adopta section, .voluntarios section, .cuidados section {
     width: 100%;
   }
-  .visitas .transporte-container {
+  .visitas .transporte-container, .prensa .transporte-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .visitas .transporte-container .transporte {
+  .visitas .transporte-container .transporte, .prensa .transporte-container .transporte {
     width: 100%;
     padding: 0px;
     margin-top: 40px;

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/0c08d73767.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Campito Refugio</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="assets/img/logo.svg" alt="Logo del campito" height="auto" width="55%"></a>
+        <nav>
+            <ul class="hidden" id="myLinks">
+                <li> <a href="nosotros.html"> Nosotros</a> </li>
+                <li class="hidden">|</li>
+                <li> <a href="colaborar.html"> Colabor&aacute;</a> </li>
+                <li class="hidden">|</li>
+                <li> <a href="adopta.html"> Adopt&aacute;</a> </li>
+                <li class="hidden">|</li>
+                <li> <a href="voluntarios.html"> Voluntariado</a> </li>
+                <li class="hidden">|</li>
+                <li> <a href="proyectos.html"> Proyectos</a> </li>
+                <li class="hidden">|</li>
+                <li> <a href="contactanos.html"> Contactanos</a> </li>
+            </ul>
+        </nav>
+        <a href="javascript:void(0);" onclick="myFunction()"> <i class="fas fa-bars appear fa-4xs"></i></a>
+    </header>
+    <main class="prensa parent-column">
+        <div class="parent-column">
+            <section>
+                <h2>PRENSA RADIO</h2>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <img src="assets/img/logo-cara.svg" width="15%" height="auto" alt="Logo carita de perro del campito">
+            <div>
+                <div class="info-container">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Estamos en Esteban Echeverr&iacute;a, Argentina</p>
+                </div>
+                <div class="info-container">
+                    <h4>#ADOPTANOCOMPRES</h4>
+                </div>
+            </div>
+            <div class="redes">
+                <h4>¡Seguinos!</h4>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+        <p class="derechos">El Campito Refugio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.classList.contains('hidden')) {
+                x.classList.remove('hidden');
+            } else {
+                x.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+
+</html>
