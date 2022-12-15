@@ -282,10 +282,6 @@ span {
     font-size: 1.15em;
 }
 
-.debito-automatico p { 
-    margin-top: 20px;
-}
-
 .cuenta-bancaria h3 {
     margin-bottom: 20px;
     font-size: 1.2500em;
@@ -605,6 +601,12 @@ input {
 
 //------ MEDIA QUERIES -----//
 
+@media (max-width: 1157px) {
+    .cuenta-bancaria, .debito-automatico {
+        max-height: 370px;
+        min-height: 370px;
+    }
+}
 @media (max-width: 1085px) {
     body {
         font-size: $h3-small-size;
@@ -612,6 +614,10 @@ input {
     .parent-grid-2, .parent-grid-2-paypal, .parent-grid-5 {
         grid-template-columns: none;
         gap: 10px;
+    }
+    .cuenta-bancaria, .debito-automatico {
+        max-height: 300px;
+        min-height: 300px;
     }
   }
   
